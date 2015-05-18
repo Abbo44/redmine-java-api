@@ -167,6 +167,11 @@ public final class Transport {
                 CustomFieldDefinition.class,
                 config("custom_field", "custom_fields", null,
                         RedmineJSONParser.CUSTOM_FIELD_DEFINITION_PARSER));
+        OBJECT_CONFIGS.put(
+        	Attachment.class, 
+        	config("attachment", "attachments", null, 
+        		RedmineJSONParser.ATTACHMENT_PARSER));
+
     }
 
 	private final URIConfigurator configurator;
